@@ -43,6 +43,7 @@ describe("Ballot", function () {
             const chairperson = await ballotContract.chairperson();
             expect(chairperson).to.eq(deployer);
           });
+          
 
           it("sets the voting weight for the chairperson as 1", async function () {
             const chairperson = await ballotContract.chairperson();
